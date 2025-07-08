@@ -13,7 +13,7 @@ from langchain_core.prompts import PromptTemplate
 from langchain.chains.conversation.memory import ConversationBufferWindowMemory
 
 # Set up OpenAI API key
-openai.api_key = "Secret-Key" //Add your Secret-Key Here
+openai.api_key = "Secret-Key"          #Add your Secret-Key Here
 
 # Initialize LangChain prompt template
 prompt_template = """
@@ -36,7 +36,7 @@ llm = ChatOpenAI(
     temperature=0.8,
     model="gpt-3.5-turbo",
     model_kwargs={"frequency_penalty": 1.3, "presence_penalty": 0.2},
-    openai_api_key="Secret-Key"  //Add your Secret-Key Here
+    openai_api_key="Secret-Key"  #Add your Secret-Key Here
 
 )
 conversation = ConversationChain(
